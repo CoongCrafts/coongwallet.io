@@ -1,28 +1,42 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { Button, Container } from 'react-bootstrap';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className='App'>
-      <div>
-        <a href='https://vitejs.dev' target='_blank'>
-          <img src='/vite.svg' className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://reactjs.org' target='_blank'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className='card'>
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
+    <div className='flex flex-col min-h-[100vh] text-gray-800'>
+      <Header />
+      <main className='my-16 text-center flex-1'>
+        <Container>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-6'>
+            A website-based
+            <br />
+            multi-chain crypto wallet
+            <br />
+            for{' '}
+            <a href='https://polkadot.network' target='_blank' className='text-polkadot'>
+              Polkadot
+            </a>{' '}
+            &{' '}
+            <a href='https://kusama.network' target='_blank' className='text-polkadot'>
+              Kusama
+            </a>{' '}
+            ecosystem
+          </h1>
+          <p className='text-2xl'>Begin your web3 journey right from your favorite browsers</p>
+          <div>
+            <Button variant='primary' size='lg' href='https://app.coongwallet.io/new-wallet' className='m-2'>
+              Create new Wallet
+            </Button>
+            <Button disabled={true} variant='outline-primary' size='lg' className='m-2'>
+              <span>Restore existing Wallet</span>
+              <span className='whitespace-nowrap text-xs'> (Coming soon)</span>
+            </Button>
+          </div>
+        </Container>
+      </main>
+      <Footer />
     </div>
   );
 }
