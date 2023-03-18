@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true,
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
         primary: '#1A88DB',
+        polkadot: '#E6007A',
       },
     },
     fontSize: {
@@ -19,9 +21,16 @@ module.exports = {
       '5xl': '2rem', // 32px - h1
       '6xl': '2.625rem', // 42px
     },
+    screens: {
+      sm: '576px',
+      md: '768px',
+      lg: '992px',
+      xl: '1200px',
+      xxl: '1400px',
+    },
   },
   plugins: [],
-  // corePlugins: {
-  //   preflight: false,
-  // },
+  corePlugins: {
+    preflight: false,
+  },
 };
