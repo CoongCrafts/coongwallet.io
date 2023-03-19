@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='flex flex-col min-h-[100vh] text-gray-800'>
       <Header />
-      <main className='my-16 text-center flex-1'>
+      <main className='my-16 text-center flex-1 max-w-[800px] mx-auto'>
         <Container>
           <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-6'>
             A website-based

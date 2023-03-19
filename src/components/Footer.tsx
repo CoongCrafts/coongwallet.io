@@ -8,7 +8,7 @@ const Footer: FC<Props> = ({ className = '' }) => {
   return (
     <footer className={`${className} border-t border-black/10`}>
       <Container>
-        <div className='flex flex-col sm:flex-row justify-between items-center py-4 gap-4'>
+        <div className='flex flex-col sm:flex-row justify-between items-center py-4 gap-4 max-w-[800px] mx-auto'>
           <span>Copyright &copy; 2023 Coong Wallet</span>
           <div className='flex gap-6'>
             <a href='https://twitter.com/CoongWallet' target='_blank'>
