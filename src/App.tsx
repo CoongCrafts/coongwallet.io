@@ -24,13 +24,13 @@ function App() {
             </a>{' '}
             ecosystem
           </h1>
-          <p className='text-2xl'>Begin your web3 journey right from your favorite browsers</p>
+          <p className='text-2xl'>Begin the web3 journey right from your favorite browsers</p>
           <div>
             <Button variant='primary' size='lg' href='https://app.coongwallet.io/new-wallet' className='m-2'>
-              Create new Wallet
+              Create New Wallet
             </Button>
             <Button disabled={true} variant='outline-primary' size='lg' className='m-2'>
-              <span>Restore existing Wallet</span>
+              <span>Restore Existing Wallet</span>
               <span className='whitespace-nowrap text-xs'> (Coming soon)</span>
             </Button>
           </div>
