@@ -29,9 +29,12 @@ function App() {
             <Button variant='primary' size='lg' href='https://app.coongwallet.io/new-wallet' className='m-2'>
               Create New Wallet
             </Button>
-            <Button disabled={true} variant='outline-primary' size='lg' className='m-2'>
+            <Button
+              variant='outline-primary'
+              size='lg'
+              href='https://app.coongwallet.io/restore-wallet'
+              className='m-2'>
               <span>Restore Existing Wallet</span>
-              <span className='whitespace-nowrap text-xs'> (Coming soon)</span>
             </Button>
           </div>
         </Container>
